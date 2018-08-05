@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <!--<color name="colorPrimary">#00AA8D</color>-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabColor">#AFE5DB</color>
+    <color name="selectedTabColor">#FFFFFF</color>
+    <color name="mainColor">#00AA8D</color>
+
+    <color name="routeColor">#3F51B5</color>
+
+    <color name="errorColor">#FF0000</color>
+</resources>
+
+

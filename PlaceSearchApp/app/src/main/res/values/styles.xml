@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF0000</item>
+        <item name="colorPrimaryDark">#FF0000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="toolBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
+
+    <style name="tabText" parent="@android:style/TextAppearance.Medium">
+        <!--<item name="android:layout_width">fill_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:textColor">#FFFFFF</item>-->
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="infoTableRow">
+        <item name="android:padding">10sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="infoTableRow1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="infoTableRow2">
+        <item name="android:textSize">14sp</item>>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+
+    <!--<style name="listItemText">20dp</style>-->
+
+    <!--<style name="placelist_toolbar">-->
+        <!--<item name="colorControlNormal">#FFFFFF</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.Base" parent="Theme.AppCompat">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+    <!--</style>-->
+
+</resources>

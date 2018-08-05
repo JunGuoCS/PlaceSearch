@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetail.PlaceInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/info_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow2"
+                android:text="TextView" />
+        </TableRow>
+
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_phonenumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Phone Number" />
+
+            <TextView
+                android:id="@+id/info_phonenumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                style="@style/infoTableRow2"
+                android:text="TextView" />
+        </TableRow>
+
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_pricelevel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_pricelevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Price Level" />
+
+            <TextView
+                android:id="@+id/info_pricelevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow2"
+                android:text="TextView" />
+        </TableRow>
+
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_rating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_rating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Rating" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/info_rating2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/infoTableRow2"-->
+                <!--android:text="TextView" />-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<RatingBar-->
+                    <!--android:id="@+id/info_rating2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scaleX="0.5"-->
+                    <!--android:scaleY="0.5"-->
+                    <!--android:transformPivotX="0dp"-->
+                    <!--android:transformPivotY="0dp"-->
+                    <!--android:numStars="5"-->
+                    <!--android:rating="0.0"-->
+                    <!--android:stepSize="0.1" />-->
+            <!--</LinearLayout>-->
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="3"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<RatingBar-->
+                    <!--android:id="@+id/info_rating2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--style="?android:attr/ratingBarStyleIndicator"-->
+                    <!--android:scaleX="0.7"-->
+                    <!--android:scaleY="0.7"-->
+                    <!--android:transformPivotX="0dp"-->
+                    <!--android:transformPivotY="0dp"-->
+                    <!--android:numStars="5"-->
+                    <!--android:rating="0.0"-->
+                    <!--android:isIndicator="true"-->
+                    <!--android:stepSize="0.01" />-->
+            <!--</LinearLayout>-->
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/info_rating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="-26dp"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:isIndicator="true"
+                    android:stepSize="0.01" />
+            </LinearLayout>
+
+
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_url"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_url1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Google Page" />
+
+            <TextView
+                android:id="@+id/info_url2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                style="@style/infoTableRow2"
+                android:text="TextView" />
+        </TableRow>
+
+        <TableRow
+            style="@style/infoTableRow"
+            android:id="@+id/info_website"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_website1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoTableRow1"
+                android:text="Website" />
+
+            <TextView
+                android:id="@+id/info_website2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                style="@style/infoTableRow2"
+                android:text="TextView" />
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputView.FavoriteList">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/favlist_emptytext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No favroites" />
+
+<!--<LinearLayout-->
+    <!--android:id="@+id/favlist_cover"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone"-->
+    <!--&gt;-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favlist_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_marginTop="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+<!--</LinearLayout>-->
+
+
+</FrameLayout>
