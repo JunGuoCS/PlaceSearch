@@ -1,4 +1,3 @@
-//express_demo.js 文件
 var port = process.env.PORT || 8081;
 
 var express = require('express');
@@ -6,7 +5,6 @@ var bodyParser = require('body-parser');
 var app = express();
 var router = express.Router();
 
-// app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
 
 var request = require('request');
@@ -97,7 +95,6 @@ app.post('/api/nextpage', function (req, res) {
 
     var urlData="https://maps.googleapis.com/maps/api/place/nearbysearch/json?pagetoken="+req.body.page_token+"&key=AIzaSyC3LPJU1Woyxde77RetB_arvSXga_judKw";
 
-
     getPlaceList1(urlData,res);
 
 });
@@ -107,10 +104,6 @@ function getPlaceList1(urlData,res){
 	request(urlData, function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 	  	let json=JSON.parse(body);
-
-	    // console.log(jsonObj["results"][0]) // Show the HTML for the baidu homepage.
-	    // console.log(json.results[0].icon);
-	   	// console.log(body["result"]["status"]);
 
 	   	var place_list_data=[];
 
@@ -133,7 +126,6 @@ function getPlaceList1(urlData,res){
    			place_list_res.next_page_token=json.next_page_token;
    		}
 
-	   	// console.log(place_list_res.next_page_token);
 	   	res.send(place_list_res);
 
 	  }
@@ -145,10 +137,6 @@ function getPlaceList2(urlData,res,lat,lng){
 	request(urlData, function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 	  	let json=JSON.parse(body);
-
-	    // console.log(jsonObj["results"][0]) // Show the HTML for the baidu homepage.
-	    // console.log(json.results[0].icon);
-	   	// console.log(body["result"]["status"]);
 
 	   	var place_list_data=[];
 
@@ -174,8 +162,6 @@ function getPlaceList2(urlData,res,lat,lng){
    		place_list_res.curlat=lat;
    		place_list_res.curlng=lng;
 
-
-	   	// console.log(place_list_res.next_page_token);
 	   	res.send(place_list_res);
 
 	  }
@@ -220,9 +206,6 @@ app.post('/api/placedetail', function (req, res) {
 	   			icon:place.icon
 	   	};
 
-	 
-
-	   	// console.log(place_list_res.next_page_token);
 	   	res.send(place_detail_data);
 
 	  }
@@ -253,12 +236,8 @@ app.post('/api/yelpreview', function (req, res) {
 		}
 
 		var shop_id=response.jsonBody.businesses[0].id;
-	 	console.log(shop_id);
-
 
 	  	client.reviews(shop_id).then(response1 => {
-			console.log(response1.jsonBody.reviews[0].text);
-			// res.send(response1.jsonBody.reviews);
 			res.send(response1.jsonBody);
 		}).catch(e => {
 			console.log(e);

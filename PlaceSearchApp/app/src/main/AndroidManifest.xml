@@ -25,16 +25,14 @@
         </activity>
         <activity android:name=".PlaceList.PlaceList" />
 
+        <!-- You need to provide your google map service key here -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC3LPJU1Woyxde77RetB_arvSXga_judKw" />
+            android:value="xxx" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-
-
 
         <activity android:name=".PlaceDetail.PlaceDetailActivity"></activity>
     </application>
