@@ -10,15 +10,12 @@ This is a application that could search place information based on keyword. The 
 4. Deploy PlaceSearchServer, which is implemented by node.js, to AWS or GAE
 
 # Related Screenshots
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/StartPage.png)
-
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/PlaceList.png)
-
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/PlaceInfo.png)
-
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/PlacePhoto.png)
-
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/PlaceMapDirection.png)
-
-![image](https://github.com/JunGuoCS/PlaceSearch/tree/master/Images/PlaceReviews.png)
+<figure class="half">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/StartPage.png">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/PlaceList.png">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/PlaceInfo.png">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/PlacePhoto.png">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/PlaceMapDirection.png">
+    <img src="https://github.com/JunGuoCS/PlaceSearch/blob/master/Images/PlaceReviews.png">
+</figure>
 
